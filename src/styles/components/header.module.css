@@ -1,33 +1,12 @@
-/* styles/style.css */
-* {
-  margin: 0;
-}
-
-.flex {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-}
-
-header {
+.header {
   margin: 20px;
   width: 500px;
   height: 500px;
 }
 
-body {
-  /* Assure-toi que l'image 'house.png' est dans le dossier public/img */
-  background-image: url(/img/house.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.backImg {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.logo {
+  top: 140px;
+  height: 100px;
 }
 
 .ongletA {
@@ -72,24 +51,4 @@ body {
   border-radius: 100%;
   background-color: #ee7539;
   transition-duration: 1s;
-}
-
-.abso {
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.logo {
-  top: 140px;
-  height: 100px;
-}
-
-a {
-  color: #ffffff;
-  font-family: monospace;
-  position: absolute;
-  bottom: 10px;
 }
