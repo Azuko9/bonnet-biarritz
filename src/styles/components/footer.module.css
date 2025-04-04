@@ -33,6 +33,7 @@
   top: 120px;
   transition-duration: 1s;
   z-index: 1;
+  display: flex;
 }
 
 .footerButton:hover {
@@ -49,4 +50,10 @@
 .footerContentVisible {
   top: 0px;
   z-index: 1;
+}
+
+.img {
+  width: 50px;
+  height: 60px;
+  margin-right: 10px;
 }

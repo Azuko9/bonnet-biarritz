@@ -22,9 +22,12 @@ const Footer: React.FC = () => {
           active && styles.footerContentVisible
         )}
       >
-        <p>BONNET</p>
-        <p>10 allée Marie Politzer 64200 Biarritz</p>
-        <p>0559417777</p>
+        <img src="/img/LOGO_COLOR.png" className={styles.img} alt="" />
+        <div>
+          <p>BONNET</p>
+          <p>10 allée Marie Politzer 64200 Biarritz</p>
+          <p>0559417777</p>
+        </div>
       </div>
     </footer>
   );
