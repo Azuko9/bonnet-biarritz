@@ -1,11 +1,31 @@
-// components/Footer.tsx
-import React from "react";
+"use client"; // 👈 Obligatoire pour utiliser useState
+
+import React, { useState } from "react";
+import styles from "../styles/components/footer.module.css";
+import clsx from "clsx";
 
 const Footer: React.FC = () => {
+  const [active, setActive] = useState(false);
+
   return (
-    <footer style={{ textAlign: "center", padding: "20px 0" }}>
-      <p>je fais un test de footer</p>
-      <p>© {new Date().getFullYear()} Mon Site. Tous droits réservés.</p>
+    <footer className={styles.footer}>
+      <button
+        className={clsx(
+          styles.footerButton,
+          active && styles.footerButtonActive
+        )}
+        onClick={() => setActive(!active)}
+      />
+      <div
+        className={clsx(
+          styles.footerContent,
+          active && styles.footerContentVisible
+        )}
+      >
+        <p>BONNET</p>
+        <p>10 allée Marie Politzer 64200 Biarritz</p>
+        <p>0559417777</p>
+      </div>
     </footer>
   );
 };
