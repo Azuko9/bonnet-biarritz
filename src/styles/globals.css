@@ -5,6 +5,7 @@
 
 body {
   height: 100vh;
+  background-image: url(/img/house.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
