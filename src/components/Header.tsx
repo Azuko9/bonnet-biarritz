@@ -6,33 +6,32 @@ const Header: React.FC = () => {
   return (
     <header className={clsx(styles.header, "abso")}>
       <div className={clsx(styles.ongletA, "abso")}>
-      <img  src="/public/img/logo-b.png" alt="" />
-        <img className={clsx(styles.logo, "abso")}
-          
-          src="/public/img/logo-circle-little.png"
+        <img className={clsx(styles.logo)} src="/img/logo-b.png" alt="" />
+        <img className={clsx(styles.logo, styles.logoCircleLittle)}
+          src="/img/logo-circle-little.png"
           alt=""
         />
-        <img
-          
-          src="/public/img/logo-circle-big.png"
+        <img className={clsx(styles.logo, styles.logoCircleBig)}
+
+          src="/img/logo-circle-big.png"
           alt=""
         />
-        <p className="abso" id="text-logo">BONNET</p>
+        <p className={clsx(styles.textLogo, "abso")}>BONNET</p>
       </div>
-      <div>
-        <div className={clsx(styles.ongletB, "abso")}>
-          <a href="">hello</a>
-        </div>
-        <div className={clsx(styles.ongletC, "abso")}>
-          <a href="">hello</a>
-        </div>
-        <div className={clsx(styles.ongletD, "abso")}>
-          <a href="">hello</a>
-        </div>
-        <div className={clsx(styles.ongletE, "abso")}>
-          <a href="">CINEMA</a>
-        </div>
+
+      <div className={clsx(styles.ongletB, "abso")}>
+        <a href="">hello</a>
       </div>
+      <div className={clsx(styles.ongletC, "abso")}>
+        <a href="">hello</a>
+      </div>
+      <div className={clsx(styles.ongletD, "abso")}>
+        <a href="">hello</a>
+      </div>
+      <div className={clsx(styles.ongletE, "abso")}>
+        <a href="">CINEMA</a>
+      </div>
+
     </header>
   );
 };

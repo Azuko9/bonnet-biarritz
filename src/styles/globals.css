@@ -26,11 +26,13 @@ body {
   left: 150px;
   transform: translate(-50%, -50%);
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 a {
   color: #ffffff;
   font-family: monospace;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
 }
