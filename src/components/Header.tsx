@@ -20,16 +20,16 @@ const Header: React.FC = () => {
       </div>
 
       <div className={clsx(styles.ongletB, "abso")}>
-        <a href="">hello</a>
+        <a href="/image&son">IMAGE & SON</a>
       </div>
       <div className={clsx(styles.ongletC, "abso")}>
-        <a href="">hello</a>
+        <a href="service">SERVICE</a>
       </div>
       <div className={clsx(styles.ongletD, "abso")}>
-        <a href="">hello</a>
+        <a href="/visioconference">VISIOCONFÉRENCE</a>
       </div>
       <div className={clsx(styles.ongletE, "abso")}>
-        <a href="">CINEMA</a>
+        <a href="/cinema">CINEMA</a>
       </div>
 
     </header>
