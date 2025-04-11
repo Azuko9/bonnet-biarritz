@@ -34,6 +34,32 @@
   transition-duration: 1s;
   z-index: 1;
   display: flex;
+  align-items: center;
+}
+
+.footerContent div {
+  padding-top: 12Px;
+}
+
+
+.footerContent a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  font-size: 1.4em;
+
+
+}
+
+.footerContent a p {
+
+  transition-duration: 0.5s;
+  padding: 4px 0;
+}
+
+.footerContent a:hover p {
+  color: chocolate;
+
 }
 
 .footerButton:hover {
@@ -53,7 +79,7 @@
 }
 
 .img {
-  width: 50px;
-  height: 60px;
+  width: 75px;
+  height: 90px;
   margin-right: 10px;
 }

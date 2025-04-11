@@ -4,10 +4,33 @@
   height: 500px;
 }
 
+
+
+
+
+
 .logo {
-  top: 140px;
+  top: 40px;
+  z-index: 6;
+  width: 100px;
+  height: 100px;
+  transition: 2s;
+  transform-origin: 50% 60%;
+}
+
+.logo-b {
+  z-index: 7;
   height: 100px;
 }
+
+.logo-circle-little {
+  animation: 5s rotate-reverse;
+}
+
+.logo-circle-big {
+  animation: 5s rotate;
+}
+
 
 .ongletA {
   z-index: -1;

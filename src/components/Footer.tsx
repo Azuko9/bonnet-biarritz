@@ -24,9 +24,9 @@ const Footer: React.FC = () => {
       >
         <img src="/img/LOGO_COLOR.png" className={styles.img} alt="" />
         <div>
-          <p>BONNET</p>
-          <p>10 allée Marie Politzer 64200 Biarritz</p>
-          <p>0559417777</p>
+          <a href="/"><p>BONNET</p></a>
+          <a href="https://www.google.com/maps/place/BONNET+Magasin+TV+-+HIFI+-+VIDEO/@43.469408,-1.5426891,17z/data=!3m1!4b1!4m6!3m5!1s0xd511535d6b12d8d:0x531d06240053c307!8m2!3d43.469408!4d-1.5426891!16s%2Fg%2F1tdq7b9g?entry=ttu&g_ep=EgoyMDI1MDQwNy4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"><p>10 allée Marie Politzer 64200 Biarritz</p></a>
+          <a href="tel:+33559417777"><p>05 59 41 77 77</p></a>
         </div>
       </div>
     </footer>

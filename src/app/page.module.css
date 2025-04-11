@@ -1,8 +1,0 @@
-body {
-  height: 100vh;
-  /* Assure-toi que l'image 'house.png' est dans le dossier public/img */
-  background-image: url(/img/house.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}

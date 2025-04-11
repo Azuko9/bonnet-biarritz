@@ -5,12 +5,20 @@ import styles from "../styles/components/header.module.css";
 const Header: React.FC = () => {
   return (
     <header className={clsx(styles.header, "abso")}>
-      <img
-        className={clsx(styles.logo, "abso")}
-        src="/img/LOGO_COLOR.png"
-        alt=""
-      />
-      <div className={clsx(styles.ongletA, "abso")}></div>
+      <div className={clsx(styles.ongletA, "abso")}>
+      <img  src="/public/img/logo-b.png" alt="" />
+        <img className={clsx(styles.logo, "abso")}
+          
+          src="/public/img/logo-circle-little.png"
+          alt=""
+        />
+        <img
+          
+          src="/public/img/logo-circle-big.png"
+          alt=""
+        />
+        <p className="abso" id="text-logo">BONNET</p>
+      </div>
       <div>
         <div className={clsx(styles.ongletB, "abso")}>
           <a href="">hello</a>
