@@ -1,0 +1,7 @@
+/* app/contact/contact.module.css */
+.background {
+    background-image: url(../../../public/img/shop.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
