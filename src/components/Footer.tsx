@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           active && styles.footerContentVisible
         )}
       >
-        <div>
+        <div className={styles.footerLogo}>
           <img src="/img/LOGO_COLOR.png" className={styles.img} alt="" />
           <div>
             <a href="/contact">
@@ -37,13 +37,13 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div>
-          <p>© 2025 Bonnet Magasin TV - HIFI - VIDEO</p>
-        </div>
-        <div>
-          <p>la société</p>
+          <a href="/contact">
+            <p>la société</p>
+          </a>
           <a href="/contact">
             <p>contact</p>
           </a>
+          <p>© 2025 Bonnet Magasin TV - HIFI - VIDEO</p>
         </div>
       </div>
     </footer>

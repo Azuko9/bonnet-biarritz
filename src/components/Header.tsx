@@ -7,12 +7,13 @@ const Header: React.FC = () => {
     <header className={clsx(styles.header, "abso")}>
       <div className={clsx(styles.ongletA, "abso")}>
         <img className={clsx(styles.logo)} src="/img/logo-b.png" alt="" />
-        <img className={clsx(styles.logo, styles.logoCircleLittle)}
+        <img
+          className={clsx(styles.logo, styles.logoCircleLittle)}
           src="/img/logo-circle-little.png"
           alt=""
         />
-        <img className={clsx(styles.logo, styles.logoCircleBig)}
-
+        <img
+          className={clsx(styles.logo, styles.logoCircleBig)}
           src="/img/logo-circle-big.png"
           alt=""
         />
@@ -31,7 +32,6 @@ const Header: React.FC = () => {
       <div className={clsx(styles.ongletE, "abso")}>
         <a href="/cinema">CINEMA</a>
       </div>
-
     </header>
   );
 };
