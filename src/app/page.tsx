@@ -10,6 +10,8 @@ export default function Home() {
       <div className={styles.marque}>sony</div>
       <div className={styles.marque}>sony</div>
       <div className={styles.marque}>sony</div>
+      <div className={styles.pub}></div>
+      <div className={styles.pub}></div>
     </div>
   );
 }
