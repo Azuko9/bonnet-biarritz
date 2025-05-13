@@ -13,8 +13,12 @@
   color: #000;
   text-align: center;
   margin-bottom: 20px;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
   background-color: bisque;
   margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
