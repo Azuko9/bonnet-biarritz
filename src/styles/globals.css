@@ -8,7 +8,7 @@ body {
   background-image: url(/img/house.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: ;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
