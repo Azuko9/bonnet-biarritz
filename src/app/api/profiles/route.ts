@@ -1,5 +1,4 @@
-// src/app/api/profiles/route.ts
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import dbConnect from "@/lib/dbConnect";
 import Profile from "@/models/Profile";
 import { requireAdmin } from "@/lib/auth";
@@ -7,10 +6,7 @@ import { requireAdmin } from "@/lib/auth";
 export async function GET(req: NextRequest) {
   await dbConnect();
   const profiles = await Profile.find().lean();
-  return new Response(JSON.stringify(profiles), {
-    status: 200,
-    headers: { "Content-Type": "application/json" },
-  });
+  return NextResponse.json(profiles);
 }
 
 export async function POST(req: NextRequest) {
@@ -19,11 +15,8 @@ export async function POST(req: NextRequest) {
     requireAdmin(req);
     const data = await req.json();
     const created = await Profile.create(data);
-    return new Response(JSON.stringify(created), {
-      status: 201,
-      headers: { "Content-Type": "application/json" },
-    });
+    return NextResponse.json(created, { status: 201 });
   } catch (err: any) {
-    return new Response(err.message, { status: 401 });
+    return NextResponse.json({ error: err.message }, { status: 401 });
   }
 }

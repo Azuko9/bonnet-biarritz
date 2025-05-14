@@ -1,5 +1,4 @@
-// src/app/api/profiles/[id]/route.ts
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import dbConnect from "@/lib/dbConnect";
 import Profile from "@/models/Profile";
 import { requireAdmin } from "@/lib/auth";
@@ -11,11 +10,8 @@ export async function GET(
   await dbConnect();
   const prof = await Profile.findById(params.id).lean();
   return prof
-    ? new Response(JSON.stringify(prof), {
-        status: 200,
-        headers: { "Content-Type": "application/json" },
-      })
-    : new Response("Profil non trouvé", { status: 404 });
+    ? NextResponse.json(prof)
+    : NextResponse.json({ error: "Non trouvé" }, { status: 404 });
 }
 
 export async function PUT(
@@ -29,12 +25,9 @@ export async function PUT(
     const updated = await Profile.findByIdAndUpdate(params.id, data, {
       new: true,
     }).lean();
-    return new Response(JSON.stringify(updated), {
-      status: 200,
-      headers: { "Content-Type": "application/json" },
-    });
+    return NextResponse.json(updated);
   } catch (err: any) {
-    return new Response(err.message, { status: 401 });
+    return NextResponse.json({ error: err.message }, { status: 401 });
   }
 }
 
@@ -48,6 +41,6 @@ export async function DELETE(
     await Profile.findByIdAndDelete(params.id);
     return new Response(null, { status: 204 });
   } catch (err: any) {
-    return new Response(err.message, { status: 401 });
+    return NextResponse.json({ error: err.message }, { status: 401 });
   }
 }
