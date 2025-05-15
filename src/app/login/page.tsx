@@ -30,7 +30,7 @@ export default function LoginPage() {
       // 1) Stocker le token
       localStorage.setItem("adminToken", body.token);
       // 2) Rediriger vers l’espace admin
-      router.push("/admin/profiles");
+      router.push("/admin/dashboard");
     } catch (err: any) {
       setError(err.message);
     } finally {
