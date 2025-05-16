@@ -47,10 +47,7 @@ export default function AdminPubsPage() {
       {error && <p className="text-red-600">{error}</p>}
       <div className="space-y-4">
         {pubs.map((pub) => (
-          <div
-            key={pub._id}
-            className="flex justify-between items-center border p-4 rounded"
-          >
+          <div key={pub._id}>
             <div>
               <h2 className="font-semibold">{pub.title}</h2>
               <p className="text-sm">Ordre: {pub.order}</p>

@@ -52,7 +52,7 @@ export default function CreatePubPage() {
         {/* Champs title, imageUrl, link, order */}
         {[
           { name: "title", label: "Titre", type: "text" },
-          { name: "imageUrl", label: "URL image", type: "text" },
+          { name: "imageUrl", label: "URL image" },
           { name: "link", label: "Lien", type: "text" },
           { name: "order", label: "Ordre", type: "number" },
         ].map((f) => (
@@ -63,7 +63,7 @@ export default function CreatePubPage() {
             <input
               id={f.name}
               name={f.name}
-              type={f.type}
+              type="text"
               value={(form as any)[f.name]}
               onChange={onChange}
               required={f.name != "link"}

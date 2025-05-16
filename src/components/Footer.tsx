@@ -43,7 +43,9 @@ const Footer: React.FC = () => {
           <a href="/contact">
             <p>contact</p>
           </a>
-          <p>© 2025 Bonnet Magasin TV - HIFI - VIDEO</p>
+          <a href="/login">
+            <p> 2025 Bonnet Magasin TV - HIFI - VIDEO</p>
+          </a>
         </div>
       </div>
     </footer>
